@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -42,8 +43,14 @@ public class GoogleFinanceHomePage {
     }
 
     public List<WebElement> retrieveStockSymbols() {
-        List<WebElement> listOfDisplayedTickers = driver.findElements(displayedTickersList);
+        List<WebElement> listOfDisplayedTickers = new ArrayList<>();
+        try {
+            listOfDisplayedTickers = driver.findElements(displayedTickersList);
         System.out.println("Number of stock symbols:" + listOfDisplayedTickers.size());
+
+        } catch(Exception e) {
+        System.out.println(" Exception caught " + e.getMessage());
+        }
         return listOfDisplayedTickers;
     }
 }

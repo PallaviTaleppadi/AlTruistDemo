@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
-                    <span>C:\Users\prachand\IdeaProjects\Demo\testng.xml</span>
+                    <span>C:\Users\prachand\IdeaProjects\AlTruistDemo\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -252,7 +252,7 @@
         </div> <!-- panel All_Test_Suite -->
         <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\prachand\IdeaProjects\Demo\testng.xml</span>
+            <span class="header-content">C:\Users\prachand\IdeaProjects\AlTruistDemo\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -313,34 +313,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'compareListAndDisplaySymbolsTest')
+data.setCell(0, 1, 'verifyWatchListHeaderTitleTest')
 data.setCell(0, 2, 'PageTests.GoogleFinanceHomePageTest')
-data.setCell(0, 3, 149);
+data.setCell(0, 3, 118);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyMissingSymbolsInListsTest')
+data.setCell(1, 1, 'compareListAndDisplaySymbolsTest')
 data.setCell(1, 2, 'PageTests.GoogleFinanceHomePageTest')
-data.setCell(1, 3, 98);
+data.setCell(1, 3, 114);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyWatchListHeaderTitleTest')
+data.setCell(2, 1, 'verifyMissingSymbolsInListsTest')
 data.setCell(2, 2, 'PageTests.GoogleFinanceHomePageTest')
-data.setCell(2, 3, 89);
+data.setCell(2, 3, 93);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyRetrieveTickerTest')
 data.setCell(3, 2, 'PageTests.GoogleFinanceHomePageTest')
-data.setCell(3, 3, 70);
+data.setCell(3, 3, 83);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'compareListPassFailsTest')
 data.setCell(4, 2, 'PageTests.GoogleFinanceHomePageTest')
-data.setCell(4, 3, 66);
+data.setCell(4, 3, 77);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyPageHeaderTest')
 data.setCell(5, 2, 'PageTests.GoogleFinanceHomePageTest')
-data.setCell(5, 3, 56);
+data.setCell(5, 3, 72);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 528 ms</span>
+              <span class="suite-total-time">Total running time: 557 ms</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -352,24 +352,10 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyWatchListHeaderTitleTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Actual Title: You may be interested in
-info</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">compareListAndDisplaySymbolsTest(NFLX,MSFT,TSLA,AAPL,GOOG)</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]</span>
-                <span class="reporter-method-output">Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BABA, BA]</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
               <span class="reporter-method-name">verifyMissingSymbolsInListsTest(NFLX,MSFT,TSLA,AAPL,GOOG)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]</span>
-                <span class="reporter-method-output">Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BABA, BA]</span>
+                <span class="reporter-method-output">Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BA, BABA]</span>
                 <span class="reporter-method-output"> List of Stock Symbols which are in Actual list but not in Expected List</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -381,8 +367,22 @@ info</span>
                 <span class="reporter-method-output">META</span>
                 <span class="reporter-method-output">AMZN</span>
                 <span class="reporter-method-output">MSFT</span>
-                <span class="reporter-method-output">BABA</span>
                 <span class="reporter-method-output">BA</span>
+                <span class="reporter-method-output">BABA</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyWatchListHeaderTitleTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Actual Title: You may be interested in
+info</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">compareListAndDisplaySymbolsTest(NFLX,MSFT,TSLA,AAPL,GOOG)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]</span>
+                <span class="reporter-method-output">Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BA, BABA]</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -407,33 +407,33 @@ info</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">compareListAndDisplaySymbolsTest(NFLX,MSFT,TSLA,AAPL,GOOG)</span>
-                <span class="method-start">4629 ms</span>
+                <span class="method-start">4052 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyMissingSymbolsInListsTest(NFLX,MSFT,TSLA,AAPL,GOOG)</span>
-                <span class="method-start">4782 ms</span>
+                <span class="method-start">4173 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyPageHeaderTest</span>
-                <span class="method-start">4882 ms</span>
+                <span class="method-start">4267 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyRetrieveTickerTest</span>
-                <span class="method-start">4939 ms</span>
+                <span class="method-start">4340 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyWatchListHeaderTitleTest</span>
-                <span class="method-start">5010 ms</span>
+                <span class="method-start">4430 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">compareListPassFailsTest(NFLX,MSFT,TSLA,AAPL,GOOG)</span>
-                <span class="method-start">5100 ms</span>
+                <span class="method-start">4550 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">5172 ms</span>
+                <span class="method-start">4632 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

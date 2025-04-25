@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 25 12:43:34 PDT 2025</td>
+<td>Started on:</td><td>Fri Apr 25 12:54:56 PDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5482 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4937 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -111,8 +111,8 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.run(TestNG.java:1079)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1687627235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1687627235'><pre>java.lang.AssertionError: Actual and Expected Stock symbols are not same!!: lists don&apos;t have the same size expected [6] but found [5]
+</pre></div><a href='#' onClick='toggleBox("stack-trace224060798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace224060798'><pre>java.lang.AssertionError: Actual and Expected Stock symbols are not same!!: lists don&apos;t have the same size expected [6] but found [5]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -148,7 +148,7 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 </pre></div></td>
 <td>0</td>
-<td>PageTests.GoogleFinanceHomePageTest@1bd4fdd</td></tr>
+<td>PageTests.GoogleFinanceHomePageTest@9597028</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -159,68 +159,68 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='PageTests.GoogleFinanceHomePageTest.verifyWatchListHeaderTitleTest()'><b>verifyWatchListHeaderTitleTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br/>
-<a href="#Output-746394140" onClick='toggleBox("Output-746394140", this, "Show output", "Hide output");'>Show output</a>
+<td title='PageTests.GoogleFinanceHomePageTest.verifyMissingSymbolsInListsTest()'><b>verifyMissingSymbolsInListsTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br>Parameters: NFLX,MSFT,TSLA,AAPL,GOOG<br/>
+<a href="#Output-1943750504" onClick='toggleBox("Output-1943750504", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-746394140" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-746394140">
+<a href="#Output-1943750504" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1943750504">
+Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]<br/>
+Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BA, BABA]<br/>
+ List of Stock Symbols which are in Actual list but not in Expected List<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>PageTests.GoogleFinanceHomePageTest@9597028</td></tr>
+<tr>
+<td title='PageTests.GoogleFinanceHomePageTest.verifyRetrieveTickerTest()'><b>verifyRetrieveTickerTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br/>
+<a href="#Output-1821100643" onClick='toggleBox("Output-1821100643", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1821100643" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1821100643">
+ Actual Displayed ticker list: <br/>
+TSLA<br/>
+META<br/>
+AMZN<br/>
+MSFT<br/>
+BA<br/>
+BABA<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>PageTests.GoogleFinanceHomePageTest@9597028</td></tr>
+<tr>
+<td title='PageTests.GoogleFinanceHomePageTest.verifyWatchListHeaderTitleTest()'><b>verifyWatchListHeaderTitleTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br/>
+<a href="#Output-385332399" onClick='toggleBox("Output-385332399", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-385332399" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-385332399">
 Actual Title: You may be interested in
 info<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>PageTests.GoogleFinanceHomePageTest@1bd4fdd</td></tr>
-<tr>
-<td title='PageTests.GoogleFinanceHomePageTest.compareListAndDisplaySymbolsTest()'><b>compareListAndDisplaySymbolsTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br>Parameters: NFLX,MSFT,TSLA,AAPL,GOOG<br/>
-<a href="#Output-251520863" onClick='toggleBox("Output-251520863", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-251520863" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-251520863">
-Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]<br/>
-Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BABA, BA]<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>PageTests.GoogleFinanceHomePageTest@1bd4fdd</td></tr>
+<td>PageTests.GoogleFinanceHomePageTest@9597028</td></tr>
 <tr>
 <td title='PageTests.GoogleFinanceHomePageTest.verifyPageHeaderTest()'><b>verifyPageHeaderTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest</td>
 <td></td>
 <td>0</td>
-<td>PageTests.GoogleFinanceHomePageTest@1bd4fdd</td></tr>
+<td>PageTests.GoogleFinanceHomePageTest@9597028</td></tr>
 <tr>
-<td title='PageTests.GoogleFinanceHomePageTest.verifyMissingSymbolsInListsTest()'><b>verifyMissingSymbolsInListsTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br>Parameters: NFLX,MSFT,TSLA,AAPL,GOOG<br/>
-<a href="#Output-203819996" onClick='toggleBox("Output-203819996", this, "Show output", "Hide output");'>Show output</a>
+<td title='PageTests.GoogleFinanceHomePageTest.compareListAndDisplaySymbolsTest()'><b>compareListAndDisplaySymbolsTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br>Parameters: NFLX,MSFT,TSLA,AAPL,GOOG<br/>
+<a href="#Output-1865201235" onClick='toggleBox("Output-1865201235", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-203819996" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-203819996">
+<a href="#Output-1865201235" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1865201235">
 Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]<br/>
-Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BABA, BA]<br/>
- List of Stock Symbols which are in Actual list but not in Expected List<br/>
+Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BA, BABA]<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>PageTests.GoogleFinanceHomePageTest@1bd4fdd</td></tr>
-<tr>
-<td title='PageTests.GoogleFinanceHomePageTest.verifyRetrieveTickerTest()'><b>verifyRetrieveTickerTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br/>
-<a href="#Output-1692375649" onClick='toggleBox("Output-1692375649", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1692375649" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1692375649">
- Actual Displayed ticker list: <br/>
-TSLA<br/>
-META<br/>
-AMZN<br/>
-MSFT<br/>
-BABA<br/>
-BA<br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>PageTests.GoogleFinanceHomePageTest@1bd4fdd</td></tr>
+<td>PageTests.GoogleFinanceHomePageTest@9597028</td></tr>
 </table><p>
 </body>
 </html>
