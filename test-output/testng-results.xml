@@ -5,13 +5,13 @@
       <![CDATA[Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]]]>
     </line>
     <line>
-      <![CDATA[Actual displayed ticker list: [TSLA, META, AMZN, MSFT, MS, INDEX]]]>
+      <![CDATA[Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BABA, BA]]]>
     </line>
     <line>
       <![CDATA[Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]]]>
     </line>
     <line>
-      <![CDATA[Actual displayed ticker list: [TSLA, META, AMZN, MSFT, MS, INDEX]]]>
+      <![CDATA[Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BABA, BA]]]>
     </line>
     <line>
       <![CDATA[ List of Stock Symbols which are in Actual list but not in Expected List]]>
@@ -32,26 +32,26 @@
       <![CDATA[MSFT]]>
     </line>
     <line>
-      <![CDATA[MS]]>
+      <![CDATA[BABA]]>
     </line>
     <line>
-      <![CDATA[INDEX]]>
+      <![CDATA[BA]]>
     </line>
     <line>
       <![CDATA[Actual Title: You may be interested in
 info]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-04-25T12:31:39 PDT" name="All Test Suite" finished-at="2025-04-25T12:31:43 PDT" duration-ms="3881">
+  <suite started-at="2025-04-25T12:43:34 PDT" name="All Test Suite" finished-at="2025-04-25T12:43:40 PDT" duration-ms="5482">
     <groups>
     </groups>
-    <test started-at="2025-04-25T12:31:39 PDT" name="AlTruistDemo" finished-at="2025-04-25T12:31:43 PDT" duration-ms="3881">
+    <test started-at="2025-04-25T12:43:34 PDT" name="AlTruistDemo" finished-at="2025-04-25T12:43:40 PDT" duration-ms="5482">
       <class name="PageTests.GoogleFinanceHomePageTest">
-        <test-method is-config="true" signature="InitialSetUp()[pri:0, instance:PageTests.GoogleFinanceHomePageTest@5c6648b0]" started-at="2025-04-25T12:31:39 PDT" name="InitialSetUp" finished-at="2025-04-25T12:31:42 PDT" duration-ms="3116" status="PASS">
+        <test-method is-config="true" signature="InitialSetUp()[pri:0, instance:PageTests.GoogleFinanceHomePageTest@1bd4fdd]" started-at="2025-04-25T12:43:34 PDT" name="InitialSetUp" finished-at="2025-04-25T12:43:39 PDT" duration-ms="4598" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialSetUp -->
-        <test-method signature="compareListAndDisplaySymbolsTest(java.lang.String)[pri:1, instance:PageTests.GoogleFinanceHomePageTest@5c6648b0]" started-at="2025-04-25T12:31:42 PDT" name="compareListAndDisplaySymbolsTest" finished-at="2025-04-25T12:31:42 PDT" duration-ms="116" status="PASS">
+        <test-method signature="compareListAndDisplaySymbolsTest(java.lang.String)[pri:1, instance:PageTests.GoogleFinanceHomePageTest@1bd4fdd]" started-at="2025-04-25T12:43:39 PDT" name="compareListAndDisplaySymbolsTest" finished-at="2025-04-25T12:43:39 PDT" duration-ms="149" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,11 +64,11 @@ info]]>
               <![CDATA[Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]]]>
             </line>
             <line>
-              <![CDATA[Actual displayed ticker list: [TSLA, META, AMZN, MSFT, MS, INDEX]]]>
+              <![CDATA[Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BABA, BA]]]>
             </line>
           </reporter-output>
         </test-method> <!-- compareListAndDisplaySymbolsTest -->
-        <test-method signature="verifyMissingSymbolsInListsTest(java.lang.String)[pri:1, instance:PageTests.GoogleFinanceHomePageTest@5c6648b0]" started-at="2025-04-25T12:31:42 PDT" name="verifyMissingSymbolsInListsTest" finished-at="2025-04-25T12:31:42 PDT" duration-ms="69" status="PASS">
+        <test-method signature="verifyMissingSymbolsInListsTest(java.lang.String)[pri:1, instance:PageTests.GoogleFinanceHomePageTest@1bd4fdd]" started-at="2025-04-25T12:43:39 PDT" name="verifyMissingSymbolsInListsTest" finished-at="2025-04-25T12:43:39 PDT" duration-ms="98" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,18 +81,18 @@ info]]>
               <![CDATA[Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]]]>
             </line>
             <line>
-              <![CDATA[Actual displayed ticker list: [TSLA, META, AMZN, MSFT, MS, INDEX]]]>
+              <![CDATA[Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BABA, BA]]]>
             </line>
             <line>
               <![CDATA[ List of Stock Symbols which are in Actual list but not in Expected List]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyMissingSymbolsInListsTest -->
-        <test-method signature="verifyPageHeaderTest()[pri:1, instance:PageTests.GoogleFinanceHomePageTest@5c6648b0]" started-at="2025-04-25T12:31:42 PDT" name="verifyPageHeaderTest" finished-at="2025-04-25T12:31:42 PDT" duration-ms="61" status="PASS">
+        <test-method signature="verifyPageHeaderTest()[pri:1, instance:PageTests.GoogleFinanceHomePageTest@1bd4fdd]" started-at="2025-04-25T12:43:39 PDT" name="verifyPageHeaderTest" finished-at="2025-04-25T12:43:39 PDT" duration-ms="56" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageHeaderTest -->
-        <test-method signature="verifyRetrieveTickerTest()[pri:1, instance:PageTests.GoogleFinanceHomePageTest@5c6648b0]" started-at="2025-04-25T12:31:42 PDT" name="verifyRetrieveTickerTest" finished-at="2025-04-25T12:31:43 PDT" duration-ms="62" status="PASS">
+        <test-method signature="verifyRetrieveTickerTest()[pri:1, instance:PageTests.GoogleFinanceHomePageTest@1bd4fdd]" started-at="2025-04-25T12:43:39 PDT" name="verifyRetrieveTickerTest" finished-at="2025-04-25T12:43:39 PDT" duration-ms="70" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ Actual Displayed ticker list: ]]>
@@ -110,14 +110,14 @@ info]]>
               <![CDATA[MSFT]]>
             </line>
             <line>
-              <![CDATA[MS]]>
+              <![CDATA[BABA]]>
             </line>
             <line>
-              <![CDATA[INDEX]]>
+              <![CDATA[BA]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyRetrieveTickerTest -->
-        <test-method signature="verifyWatchListHeaderTitleTest()[pri:1, instance:PageTests.GoogleFinanceHomePageTest@5c6648b0]" started-at="2025-04-25T12:31:43 PDT" name="verifyWatchListHeaderTitleTest" finished-at="2025-04-25T12:31:43 PDT" duration-ms="59" status="PASS">
+        <test-method signature="verifyWatchListHeaderTitleTest()[pri:1, instance:PageTests.GoogleFinanceHomePageTest@1bd4fdd]" started-at="2025-04-25T12:43:39 PDT" name="verifyWatchListHeaderTitleTest" finished-at="2025-04-25T12:43:39 PDT" duration-ms="89" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Actual Title: You may be interested in
@@ -125,7 +125,7 @@ info]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyWatchListHeaderTitleTest -->
-        <test-method signature="compareListPassFailsTest(java.lang.String)[pri:2, instance:PageTests.GoogleFinanceHomePageTest@5c6648b0]" started-at="2025-04-25T12:31:43 PDT" name="compareListPassFailsTest" finished-at="2025-04-25T12:31:43 PDT" duration-ms="68" status="FAIL">
+        <test-method signature="compareListPassFailsTest(java.lang.String)[pri:2, instance:PageTests.GoogleFinanceHomePageTest@1bd4fdd]" started-at="2025-04-25T12:43:39 PDT" name="compareListPassFailsTest" finished-at="2025-04-25T12:43:39 PDT" duration-ms="66" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -178,7 +178,7 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compareListPassFailsTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:PageTests.GoogleFinanceHomePageTest@5c6648b0]" started-at="2025-04-25T12:31:43 PDT" name="quitDriver" finished-at="2025-04-25T12:31:43 PDT" duration-ms="260" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:PageTests.GoogleFinanceHomePageTest@1bd4fdd]" started-at="2025-04-25T12:43:39 PDT" name="quitDriver" finished-at="2025-04-25T12:43:40 PDT" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
