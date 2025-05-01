@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+<testng-results ignored="0" total="15" passed="13" failed="2" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]]]>
     </line>
     <line>
-      <![CDATA[Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BA, BABA]]]>
+      <![CDATA[Actual displayed ticker list: [MSFT, META, AMZN, MS, TSLA, INDEX]]]>
     </line>
     <line>
       <![CDATA[Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]]]>
     </line>
     <line>
-      <![CDATA[Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BA, BABA]]]>
+      <![CDATA[Actual displayed ticker list: [MSFT, META, AMZN, MS, TSLA, INDEX]]]>
+    </line>
+    <line>
+      <![CDATA[Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]]]>
+    </line>
+    <line>
+      <![CDATA[Actual displayed ticker list: [MSFT, META, AMZN, MS, TSLA, INDEX]]]>
     </line>
     <line>
       <![CDATA[ List of Stock Symbols which are in Actual list but not in Expected List]]>
@@ -20,7 +26,7 @@
       <![CDATA[ Actual Displayed ticker list: ]]>
     </line>
     <line>
-      <![CDATA[TSLA]]>
+      <![CDATA[MSFT]]>
     </line>
     <line>
       <![CDATA[META]]>
@@ -29,29 +35,58 @@
       <![CDATA[AMZN]]>
     </line>
     <line>
-      <![CDATA[MSFT]]>
+      <![CDATA[MS]]>
     </line>
     <line>
-      <![CDATA[BA]]>
+      <![CDATA[TSLA]]>
     </line>
     <line>
-      <![CDATA[BABA]]>
+      <![CDATA[INDEX]]>
+    </line>
+    <line>
+      <![CDATA[Search for:TSLA]]>
+    </line>
+    <line>
+      <![CDATA[Search for:AMZN]]>
+    </line>
+    <line>
+      <![CDATA[Search for:GOOG]]>
+    </line>
+    <line>
+      <![CDATA[Search for:MSFT]]>
     </line>
     <line>
       <![CDATA[Actual Title: You may be interested in
 info]]>
     </line>
+    <line>
+      <![CDATA[Actual displayed stock price list: [+$34.34, +$27.07, +$5.91, +$2.07, +$3.56, +67.57]]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-04-25T12:54:56 PDT" name="All Test Suite" finished-at="2025-04-25T12:55:01 PDT" duration-ms="4937">
+  <suite started-at="2025-05-01T10:23:43 PDT" name="All Test Suite" finished-at="2025-05-01T10:24:00 PDT" duration-ms="17110">
     <groups>
     </groups>
-    <test started-at="2025-04-25T12:54:56 PDT" name="AlTruistDemo" finished-at="2025-04-25T12:55:01 PDT" duration-ms="4937">
+    <test started-at="2025-05-01T10:23:43 PDT" name="AlTruistDemo" finished-at="2025-05-01T10:24:00 PDT" duration-ms="17110">
       <class name="PageTests.GoogleFinanceHomePageTest">
-        <test-method is-config="true" signature="InitialSetUp()[pri:0, instance:PageTests.GoogleFinanceHomePageTest@9597028]" started-at="2025-04-25T12:54:56 PDT" name="InitialSetUp" finished-at="2025-04-25T12:55:00 PDT" duration-ms="4026" status="PASS">
+        <test-method is-config="true" signature="InitialSetUp()[pri:0, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:43 PDT" name="InitialSetUp" finished-at="2025-05-01T10:23:47 PDT" duration-ms="3897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InitialSetUp -->
-        <test-method signature="compareListAndDisplaySymbolsTest(java.lang.String)[pri:1, instance:PageTests.GoogleFinanceHomePageTest@9597028]" started-at="2025-04-25T12:55:00 PDT" name="compareListAndDisplaySymbolsTest" finished-at="2025-04-25T12:55:00 PDT" duration-ms="114" status="PASS">
+        <test-method signature="verifyStockAndPriceTest()[pri:0, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:47 PDT" name="verifyStockAndPriceTest" finished-at="2025-05-01T10:23:47 PDT" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStockAndPriceTest -->
+        <test-method signature="compareActualListWithGivenExpected()[pri:1, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:47 PDT" name="compareActualListWithGivenExpected" finished-at="2025-05-01T10:23:47 PDT" duration-ms="203" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]]]>
+            </line>
+            <line>
+              <![CDATA[Actual displayed ticker list: [MSFT, META, AMZN, MS, TSLA, INDEX]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- compareActualListWithGivenExpected -->
+        <test-method signature="compareListAndDisplaySymbolsTest(java.lang.String)[pri:1, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:47 PDT" name="compareListAndDisplaySymbolsTest" finished-at="2025-05-01T10:23:47 PDT" duration-ms="189" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,11 +99,11 @@ info]]>
               <![CDATA[Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]]]>
             </line>
             <line>
-              <![CDATA[Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BA, BABA]]]>
+              <![CDATA[Actual displayed ticker list: [MSFT, META, AMZN, MS, TSLA, INDEX]]]>
             </line>
           </reporter-output>
         </test-method> <!-- compareListAndDisplaySymbolsTest -->
-        <test-method signature="verifyMissingSymbolsInListsTest(java.lang.String)[pri:1, instance:PageTests.GoogleFinanceHomePageTest@9597028]" started-at="2025-04-25T12:55:00 PDT" name="verifyMissingSymbolsInListsTest" finished-at="2025-04-25T12:55:00 PDT" duration-ms="93" status="PASS">
+        <test-method signature="verifyMissingSymbolsInListsTest(java.lang.String)[pri:1, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:47 PDT" name="verifyMissingSymbolsInListsTest" finished-at="2025-05-01T10:23:48 PDT" duration-ms="136" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,24 +116,24 @@ info]]>
               <![CDATA[Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]]]>
             </line>
             <line>
-              <![CDATA[Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BA, BABA]]]>
+              <![CDATA[Actual displayed ticker list: [MSFT, META, AMZN, MS, TSLA, INDEX]]]>
             </line>
             <line>
               <![CDATA[ List of Stock Symbols which are in Actual list but not in Expected List]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyMissingSymbolsInListsTest -->
-        <test-method signature="verifyPageHeaderTest()[pri:1, instance:PageTests.GoogleFinanceHomePageTest@9597028]" started-at="2025-04-25T12:55:00 PDT" name="verifyPageHeaderTest" finished-at="2025-04-25T12:55:00 PDT" duration-ms="72" status="PASS">
+        <test-method signature="verifyPageHeaderTest()[pri:1, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:48 PDT" name="verifyPageHeaderTest" finished-at="2025-05-01T10:23:48 PDT" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageHeaderTest -->
-        <test-method signature="verifyRetrieveTickerTest()[pri:1, instance:PageTests.GoogleFinanceHomePageTest@9597028]" started-at="2025-04-25T12:55:00 PDT" name="verifyRetrieveTickerTest" finished-at="2025-04-25T12:55:00 PDT" duration-ms="83" status="PASS">
+        <test-method signature="verifyRetrieveTickerTest()[pri:1, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:48 PDT" name="verifyRetrieveTickerTest" finished-at="2025-05-01T10:23:48 PDT" duration-ms="140" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ Actual Displayed ticker list: ]]>
             </line>
             <line>
-              <![CDATA[TSLA]]>
+              <![CDATA[MSFT]]>
             </line>
             <line>
               <![CDATA[META]]>
@@ -107,17 +142,73 @@ info]]>
               <![CDATA[AMZN]]>
             </line>
             <line>
-              <![CDATA[MSFT]]>
+              <![CDATA[MS]]>
             </line>
             <line>
-              <![CDATA[BA]]>
+              <![CDATA[TSLA]]>
             </line>
             <line>
-              <![CDATA[BABA]]>
+              <![CDATA[INDEX]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyRetrieveTickerTest -->
-        <test-method signature="verifyWatchListHeaderTitleTest()[pri:1, instance:PageTests.GoogleFinanceHomePageTest@9597028]" started-at="2025-04-25T12:55:00 PDT" name="verifyWatchListHeaderTitleTest" finished-at="2025-04-25T12:55:00 PDT" duration-ms="118" status="PASS">
+        <test-method signature="verifySearchStockSymbolTest(java.lang.String)[pri:1, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:48 PDT" name="verifySearchStockSymbolTest" data-provider="StockSymbol_Search" finished-at="2025-05-01T10:23:50 PDT" duration-ms="2213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TSLA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Search for:TSLA]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySearchStockSymbolTest -->
+        <test-method signature="verifySearchStockSymbolTest(java.lang.String)[pri:1, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:50 PDT" name="verifySearchStockSymbolTest" data-provider="StockSymbol_Search" finished-at="2025-05-01T10:23:52 PDT" duration-ms="2027" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AMZN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Search for:AMZN]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySearchStockSymbolTest -->
+        <test-method signature="verifySearchStockSymbolTest(java.lang.String)[pri:1, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:52 PDT" name="verifySearchStockSymbolTest" data-provider="StockSymbol_Search" finished-at="2025-05-01T10:23:54 PDT" duration-ms="1742" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[GOOG]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Search for:GOOG]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySearchStockSymbolTest -->
+        <test-method signature="verifySearchStockSymbolTest(java.lang.String)[pri:1, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:54 PDT" name="verifySearchStockSymbolTest" data-provider="StockSymbol_Search" finished-at="2025-05-01T10:23:56 PDT" duration-ms="2207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MSFT]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Search for:MSFT]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifySearchStockSymbolTest -->
+        <test-method signature="verifyWatchListHeaderTitleTest()[pri:1, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:56 PDT" name="verifyWatchListHeaderTitleTest" finished-at="2025-05-01T10:23:56 PDT" duration-ms="176" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Actual Title: You may be interested in
@@ -125,7 +216,7 @@ info]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyWatchListHeaderTitleTest -->
-        <test-method signature="compareListPassFailsTest(java.lang.String)[pri:2, instance:PageTests.GoogleFinanceHomePageTest@9597028]" started-at="2025-04-25T12:55:00 PDT" name="compareListPassFailsTest" finished-at="2025-04-25T12:55:01 PDT" duration-ms="77" status="FAIL">
+        <test-method signature="compareListPassFailsTest(java.lang.String)[pri:2, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:56 PDT" name="compareListPassFailsTest" finished-at="2025-05-01T10:23:56 PDT" duration-ms="212" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -146,7 +237,7 @@ at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:1419)
 at org.testng.Assert.assertEquals(Assert.java:1383)
 at org.testng.Assert.assertEquals(Assert.java:1630)
-at PageTests.GoogleFinanceHomePageTest.compareListPassFailsTest(GoogleFinanceHomePageTest.java:122)
+at PageTests.GoogleFinanceHomePageTest.compareListPassFailsTest(GoogleFinanceHomePageTest.java:148)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -178,7 +269,84 @@ at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- compareListPassFailsTest -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:PageTests.GoogleFinanceHomePageTest@9597028]" started-at="2025-04-25T12:55:01 PDT" name="quitDriver" finished-at="2025-04-25T12:55:01 PDT" duration-ms="276" status="PASS">
+        <test-method signature="retrieveStockPriceTest()[pri:2, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:56 PDT" name="retrieveStockPriceTest" finished-at="2025-05-01T10:23:57 PDT" duration-ms="397" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Actual displayed stock price list: [+$34.34, +$27.07, +$5.91, +$2.07, +$3.56, +67.57]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- retrieveStockPriceTest -->
+        <test-method signature="verifyMarketTrendIndexLinkTest()[pri:2, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:57 PDT" name="verifyMarketTrendIndexLinkTest" finished-at="2025-05-01T10:23:58 PDT" duration-ms="1120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMarketTrendIndexLinkTest -->
+        <test-method signature="verifyToolTipTest()[pri:2, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:58 PDT" name="verifyToolTipTest" finished-at="2025-05-01T10:23:58 PDT" duration-ms="56" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable: [object HTMLDivElement] has no size and location
+  (Session info: chrome=135.0.7049.115)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f173373f93a4e43e66650489e2440e56, actions {actions=[org.openqa.selenium.interactions.Sequence@65e7f52a]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\prachand\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61847/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f173373f93a4e43e66650489e2440e56]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLDivElement] has no size and location
+  (Session info: chrome=135.0.7049.115)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f173373f93a4e43e66650489e2440e56, actions {actions=[org.openqa.selenium.interactions.Sequence@65e7f52a]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\prachand\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61847/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f173373f93a4e43e66650489e2440e56
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
+at Pages.GoogleFinanceHomePage.stockFollowButtonToolTip(GoogleFinanceHomePage.java:93)
+at PageTests.GoogleFinanceHomePageTest.verifyToolTipTest(GoogleFinanceHomePageTest.java:185)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyToolTipTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:PageTests.GoogleFinanceHomePageTest@78691363]" started-at="2025-05-01T10:23:58 PDT" name="quitDriver" finished-at="2025-05-01T10:24:00 PDT" duration-ms="1989" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

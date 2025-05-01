@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" verbose="2" thread-count="1">
     <test verbose="2" preserve-order="true" name="AlTruistDemo">
         <parameter name="StockSymbolList" value="NFLX,MSFT,TSLA,AAPL,GOOG"/>
         <classes><class name="PageTests.GoogleFinanceHomePageTest">
@@ -11,6 +11,12 @@
                 <include name="compareListAndDisplaySymbolsTest"/>
                 <include name="verifyMissingSymbolsInListsTest"/>
                 <include name="compareListPassFailsTest"/>
+                <include name="compareActualListWithGivenExpected"/>
+                <include name="retrieveStockPriceTest"/>
+                <include name="verifyToolTipTest"/>
+                <include name="verifyMarketTrendIndexLinkTest"/>
+                <include name="verifySearchStockSymbolTest"/>
+                <include name="verifyStockAndPriceTest"/>
             </methods>
         </class>
         </classes>

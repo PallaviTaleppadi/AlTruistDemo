@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>AlTruistDemo</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 25 12:54:56 PDT 2025</td>
+<td>Started on:</td><td>Thu May 01 10:23:43 PDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4937 ms)</td>
+<tr><td>Total time:</td><td>17 seconds (17110 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -85,7 +85,7 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1419)
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at org.testng.Assert.assertEquals(Assert.java:1630)
-	at PageTests.GoogleFinanceHomePageTest.compareListPassFailsTest(GoogleFinanceHomePageTest.java:122)
+	at PageTests.GoogleFinanceHomePageTest.compareListPassFailsTest(GoogleFinanceHomePageTest.java:148)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -111,8 +111,8 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.run(TestNG.java:1079)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-</pre></div><a href='#' onClick='toggleBox("stack-trace224060798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace224060798'><pre>java.lang.AssertionError: Actual and Expected Stock symbols are not same!!: lists don&apos;t have the same size expected [6] but found [5]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1489831627", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1489831627'><pre>java.lang.AssertionError: Actual and Expected Stock symbols are not same!!: lists don&apos;t have the same size expected [6] but found [5]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -120,7 +120,7 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1419)
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at org.testng.Assert.assertEquals(Assert.java:1630)
-	at PageTests.GoogleFinanceHomePageTest.compareListPassFailsTest(GoogleFinanceHomePageTest.java:122)
+	at PageTests.GoogleFinanceHomePageTest.compareListPassFailsTest(GoogleFinanceHomePageTest.java:148)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -148,7 +148,107 @@ function toggleAllBoxes() {
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
 </pre></div></td>
 <td>0</td>
-<td>PageTests.GoogleFinanceHomePageTest@9597028</td></tr>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
+<tr>
+<td title='PageTests.GoogleFinanceHomePageTest.verifyToolTipTest()'><b>verifyToolTipTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLDivElement] has no size and location
+  (Session info: chrome=135.0.7049.115)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f173373f93a4e43e66650489e2440e56, actions {actions=[org.openqa.selenium.interactions.Sequence@65e7f52a]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\prachand\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61847/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f173373f93a4e43e66650489e2440e56
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
+	at Pages.GoogleFinanceHomePage.stockFollowButtonToolTip(GoogleFinanceHomePage.java:93)
+	at PageTests.GoogleFinanceHomePageTest.verifyToolTipTest(GoogleFinanceHomePageTest.java:185)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div><a href='#' onClick='toggleBox("stack-trace7395550", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7395550'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: [object HTMLDivElement] has no size and location
+  (Session info: chrome=135.0.7049.115)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f173373f93a4e43e66650489e2440e56, actions {actions=[org.openqa.selenium.interactions.Sequence@65e7f52a]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.115, chrome: {chromedriverVersion: 134.0.6998.35 (ea6ef4c2ac15..., userDataDir: C:\Users\prachand\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61847}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61847/devtoo..., se:cdpVersion: 135.0.7049.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f173373f93a4e43e66650489e2440e56
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:631)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:613)
+	at Pages.GoogleFinanceHomePage.stockFollowButtonToolTip(GoogleFinanceHomePage.java:93)
+	at PageTests.GoogleFinanceHomePageTest.verifyToolTipTest(GoogleFinanceHomePageTest.java:185)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+</pre></div></td>
+<td>0</td>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -159,68 +259,151 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='PageTests.GoogleFinanceHomePageTest.verifyMissingSymbolsInListsTest()'><b>verifyMissingSymbolsInListsTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br>Parameters: NFLX,MSFT,TSLA,AAPL,GOOG<br/>
-<a href="#Output-1943750504" onClick='toggleBox("Output-1943750504", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1943750504" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1943750504">
-Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]<br/>
-Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BA, BABA]<br/>
- List of Stock Symbols which are in Actual list but not in Expected List<br/>
-</div>
-</td>
+<td title='PageTests.GoogleFinanceHomePageTest.verifyMarketTrendIndexLinkTest()'><b>verifyMarketTrendIndexLinkTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest</td>
 <td></td>
-<td>0</td>
-<td>PageTests.GoogleFinanceHomePageTest@9597028</td></tr>
+<td>1</td>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
 <tr>
-<td title='PageTests.GoogleFinanceHomePageTest.verifyRetrieveTickerTest()'><b>verifyRetrieveTickerTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br/>
+<td title='PageTests.GoogleFinanceHomePageTest.compareListAndDisplaySymbolsTest()'><b>compareListAndDisplaySymbolsTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br>Parameters: NFLX,MSFT,TSLA,AAPL,GOOG<br/>
 <a href="#Output-1821100643" onClick='toggleBox("Output-1821100643", this, "Show output", "Hide output");'>Show output</a>
 
 <a href="#Output-1821100643" onClick="toggleAllBoxes();">Show all outputs</a>
 <div class='log' id="Output-1821100643">
- Actual Displayed ticker list: <br/>
-TSLA<br/>
-META<br/>
-AMZN<br/>
-MSFT<br/>
-BA<br/>
-BABA<br/>
+Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]<br/>
+Actual displayed ticker list: [MSFT, META, AMZN, MS, TSLA, INDEX]<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>PageTests.GoogleFinanceHomePageTest@9597028</td></tr>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
+<tr>
+<td title='PageTests.GoogleFinanceHomePageTest.verifySearchStockSymbolTest()'><b>verifySearchStockSymbolTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br>Parameters: AMZN<br/>
+<a href="#Output-732597634" onClick='toggleBox("Output-732597634", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-732597634" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-732597634">
+Search for:AMZN<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
+<tr>
+<td title='PageTests.GoogleFinanceHomePageTest.verifyRetrieveTickerTest()'><b>verifyRetrieveTickerTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br/>
+<a href="#Output-2116299597" onClick='toggleBox("Output-2116299597", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2116299597" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2116299597">
+ Actual Displayed ticker list: <br/>
+MSFT<br/>
+META<br/>
+AMZN<br/>
+MS<br/>
+TSLA<br/>
+INDEX<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
+<tr>
+<td title='PageTests.GoogleFinanceHomePageTest.verifyPageHeaderTest()'><b>verifyPageHeaderTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
 <tr>
 <td title='PageTests.GoogleFinanceHomePageTest.verifyWatchListHeaderTitleTest()'><b>verifyWatchListHeaderTitleTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br/>
-<a href="#Output-385332399" onClick='toggleBox("Output-385332399", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1616438581" onClick='toggleBox("Output-1616438581", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-385332399" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-385332399">
+<a href="#Output-1616438581" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1616438581">
 Actual Title: You may be interested in
 info<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>PageTests.GoogleFinanceHomePageTest@9597028</td></tr>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
 <tr>
-<td title='PageTests.GoogleFinanceHomePageTest.verifyPageHeaderTest()'><b>verifyPageHeaderTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest</td>
-<td></td>
-<td>0</td>
-<td>PageTests.GoogleFinanceHomePageTest@9597028</td></tr>
-<tr>
-<td title='PageTests.GoogleFinanceHomePageTest.compareListAndDisplaySymbolsTest()'><b>compareListAndDisplaySymbolsTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br>Parameters: NFLX,MSFT,TSLA,AAPL,GOOG<br/>
-<a href="#Output-1865201235" onClick='toggleBox("Output-1865201235", this, "Show output", "Hide output");'>Show output</a>
+<td title='PageTests.GoogleFinanceHomePageTest.verifySearchStockSymbolTest()'><b>verifySearchStockSymbolTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br>Parameters: MSFT<br/>
+<a href="#Output-47918293" onClick='toggleBox("Output-47918293", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1865201235" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1865201235">
+<a href="#Output-47918293" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-47918293">
+Search for:MSFT<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
+<tr>
+<td title='PageTests.GoogleFinanceHomePageTest.verifyMissingSymbolsInListsTest()'><b>verifyMissingSymbolsInListsTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br>Parameters: NFLX,MSFT,TSLA,AAPL,GOOG<br/>
+<a href="#Output-1488946768" onClick='toggleBox("Output-1488946768", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1488946768" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1488946768">
 Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]<br/>
-Actual displayed ticker list: [TSLA, META, AMZN, MSFT, BA, BABA]<br/>
+Actual displayed ticker list: [MSFT, META, AMZN, MS, TSLA, INDEX]<br/>
+ List of Stock Symbols which are in Actual list but not in Expected List<br/>
 </div>
 </td>
 <td></td>
 <td>0</td>
-<td>PageTests.GoogleFinanceHomePageTest@9597028</td></tr>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
+<tr>
+<td title='PageTests.GoogleFinanceHomePageTest.compareActualListWithGivenExpected()'><b>compareActualListWithGivenExpected</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br/>
+<a href="#Output-1166230227" onClick='toggleBox("Output-1166230227", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1166230227" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1166230227">
+Testing with input list from XML: [NFLX, MSFT, TSLA, AAPL, GOOG]<br/>
+Actual displayed ticker list: [MSFT, META, AMZN, MS, TSLA, INDEX]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
+<tr>
+<td title='PageTests.GoogleFinanceHomePageTest.verifyStockAndPriceTest()'><b>verifyStockAndPriceTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest</td>
+<td></td>
+<td>0</td>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
+<tr>
+<td title='PageTests.GoogleFinanceHomePageTest.verifySearchStockSymbolTest()'><b>verifySearchStockSymbolTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br>Parameters: GOOG<br/>
+<a href="#Output-1768952842" onClick='toggleBox("Output-1768952842", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1768952842" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1768952842">
+Search for:GOOG<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
+<tr>
+<td title='PageTests.GoogleFinanceHomePageTest.retrieveStockPriceTest()'><b>retrieveStockPriceTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br/>
+<a href="#Output-917935693" onClick='toggleBox("Output-917935693", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-917935693" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-917935693">
+Actual displayed stock price list: [+$34.34, +$27.07, +$5.91, +$2.07, +$3.56, +67.57]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
+<tr>
+<td title='PageTests.GoogleFinanceHomePageTest.verifySearchStockSymbolTest()'><b>verifySearchStockSymbolTest</b><br>Test class: PageTests.GoogleFinanceHomePageTest<br>Parameters: TSLA<br/>
+<a href="#Output-438151297" onClick='toggleBox("Output-438151297", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-438151297" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-438151297">
+Search for:TSLA<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>PageTests.GoogleFinanceHomePageTest@78691363</td></tr>
 </table><p>
 </body>
 </html>

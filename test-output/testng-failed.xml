@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="AlTruistDemo(failed)">
+<suite thread-count="1" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="1" name="AlTruistDemo(failed)" verbose="2">
     <parameter name="StockSymbolList" value="NFLX,MSFT,TSLA,AAPL,GOOG"/>
     <classes>
       <class name="PageTests.GoogleFinanceHomePageTest">
         <methods>
           <include name="InitialSetUp"/>
           <include name="quitDriver"/>
+          <include name="verifyToolTipTest"/>
           <include name="compareListPassFailsTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- PageTests.GoogleFinanceHomePageTest -->
